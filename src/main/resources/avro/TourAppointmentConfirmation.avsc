@@ -1,0 +1,80 @@
+{
+  "type": "record",
+  "name": "TourAppointmentConfirmation",
+  "namespace": "com.cogarc.notification.avro",
+  "fields": [
+    {
+      "name": "emailType",
+      "type": "string",
+      "doc": "Type of email notification"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "Unique message identifier"
+    },
+    {
+      "name": "appointmentId",
+      "type": "string",
+      "doc": "Tour appointment identifier"
+    },
+    {
+      "name": "tourDate",
+      "type": "string",
+      "doc": "Tour date in ISO format"
+    },
+    {
+      "name": "tourTime",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Tour time"
+    },
+    {
+      "name": "customerEmail",
+      "type": "string",
+      "doc": "Customer email address"
+    },
+    {
+      "name": "customerName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Customer name"
+    },
+    {
+      "name": "propertyAddress",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Property address for the tour"
+    },
+    {
+      "name": "agentName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Real estate agent name"
+    },
+    {
+      "name": "agentEmail",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Real estate agent email"
+    },
+    {
+      "name": "confirmationNumber",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Confirmation number"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "doc": "Message timestamp in milliseconds since epoch"
+    },
+    {
+      "name": "metadata",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Additional metadata as JSON string"
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "emailType": "TRUCKLOAD",
+  "id": "truckload-001",
+  "truckloadId": "TL-2024-001",
+  "shipmentDate": "2024-01-20",
+  "recipientEmail": "shipper1@example.com",
+  "recipientName": "Tom Wilson",
+  "origin": "Chicago, IL",
+  "destination": "New York, NY",
+  "carrierName": "Fast Freight Logistics",
+  "trackingNumber": "FFL-2024-001-ABC",
+  "estimatedArrivalDate": "2024-01-23",
+  "weight": 45000.5,
+  "timestamp": 1705316200000,
+  "metadata": "{\"freightClass\": \"70\", \"temperature\": \"ambient\"}"
+}
+

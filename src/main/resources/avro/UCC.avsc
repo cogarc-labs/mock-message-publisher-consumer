@@ -1,0 +1,74 @@
+{
+  "type": "record",
+  "name": "UCC",
+  "namespace": "com.cogarc.notification.avro",
+  "fields": [
+    {
+      "name": "emailType",
+      "type": "string",
+      "doc": "Type of email notification"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "Unique message identifier"
+    },
+    {
+      "name": "uccId",
+      "type": "string",
+      "doc": "UCC document identifier"
+    },
+    {
+      "name": "documentType",
+      "type": "string",
+      "doc": "Type of UCC document (e.g., FILING, AMENDMENT, TERMINATION)"
+    },
+    {
+      "name": "recipientEmail",
+      "type": "string",
+      "doc": "Recipient email address"
+    },
+    {
+      "name": "recipientName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Recipient name"
+    },
+    {
+      "name": "filingDate",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Filing date in ISO format"
+    },
+    {
+      "name": "expirationDate",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Expiration date in ISO format"
+    },
+    {
+      "name": "securedParty",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Secured party information"
+    },
+    {
+      "name": "debtor",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Debtor information"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "doc": "Message timestamp in milliseconds since epoch"
+    },
+    {
+      "name": "metadata",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Additional metadata as JSON string"
+    }
+  ]
+}
+

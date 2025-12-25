@@ -1,0 +1,16 @@
+{
+  "emailType": "TOUR_APPOINTMENT",
+  "id": "tour-appointment-001",
+  "appointmentId": "APT-2024-001",
+  "tourDate": "2024-01-25",
+  "tourTime": "10:00 AM",
+  "customerEmail": "buyer1@example.com",
+  "customerName": "Emma Watson",
+  "propertyAddress": "123 Main Street, San Francisco, CA 94102",
+  "agentName": "Sarah Connor",
+  "agentEmail": "sarah.connor@realestate.com",
+  "confirmationNumber": "CONF-2024-001",
+  "timestamp": 1705316000000,
+  "metadata": "{\"propertyType\": \"condo\", \"duration\": \"60 minutes\"}"
+}
+

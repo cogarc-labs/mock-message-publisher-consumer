@@ -1,0 +1,15 @@
+{
+  "emailType": "UCC",
+  "id": "ucc-003",
+  "uccId": "UCC-2024-003",
+  "documentType": "TERMINATION",
+  "recipientEmail": "recipient3@example.com",
+  "recipientName": "Diana Prince",
+  "filingDate": "2024-01-17T14:00:00Z",
+  "expirationDate": null,
+  "securedParty": "JKL Bank",
+  "debtor": "MNO Industries Inc.",
+  "timestamp": 1705490400000,
+  "metadata": "{\"jurisdiction\": \"TX\", \"filingNumber\": \"TX-2024-003\"}"
+}
+

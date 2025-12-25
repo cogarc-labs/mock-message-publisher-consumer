@@ -1,0 +1,86 @@
+{
+  "type": "record",
+  "name": "TruckloadConfirmation",
+  "namespace": "com.cogarc.notification.avro",
+  "fields": [
+    {
+      "name": "emailType",
+      "type": "string",
+      "doc": "Type of email notification"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "Unique message identifier"
+    },
+    {
+      "name": "truckloadId",
+      "type": "string",
+      "doc": "Truckload shipment identifier"
+    },
+    {
+      "name": "shipmentDate",
+      "type": "string",
+      "doc": "Shipment date in ISO format"
+    },
+    {
+      "name": "recipientEmail",
+      "type": "string",
+      "doc": "Recipient email address"
+    },
+    {
+      "name": "recipientName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Recipient name"
+    },
+    {
+      "name": "origin",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Origin location"
+    },
+    {
+      "name": "destination",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Destination location"
+    },
+    {
+      "name": "carrierName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Carrier company name"
+    },
+    {
+      "name": "trackingNumber",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Tracking number"
+    },
+    {
+      "name": "estimatedArrivalDate",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Estimated arrival date in ISO format"
+    },
+    {
+      "name": "weight",
+      "type": ["null", "double"],
+      "default": null,
+      "doc": "Shipment weight in pounds"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "doc": "Message timestamp in milliseconds since epoch"
+    },
+    {
+      "name": "metadata",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Additional metadata as JSON string"
+    }
+  ]
+}
+

@@ -1,0 +1,15 @@
+{
+  "emailType": "UCC",
+  "id": "ucc-001",
+  "uccId": "UCC-2024-001",
+  "documentType": "FILING",
+  "recipientEmail": "recipient1@example.com",
+  "recipientName": "Alice Williams",
+  "filingDate": "2024-01-15T08:00:00Z",
+  "expirationDate": "2029-01-15T23:59:59Z",
+  "securedParty": "ABC Financial Services Inc.",
+  "debtor": "XYZ Manufacturing Corp.",
+  "timestamp": 1705312800000,
+  "metadata": "{\"jurisdiction\": \"CA\", \"filingNumber\": \"CA-2024-001\"}"
+}
+

@@ -1,0 +1,88 @@
+- route:
+    id: order-status-producer
+    from:
+      uri: file:${app.samples.directories.order-status}
+      parameters:
+        delete: true
+        include: "*.json"
+        noop: false
+      steps:
+        - log:
+            message: "Processing order status file: ${header.CamelFileName}"
+        - unmarshal:
+            json:
+              library: Jackson
+        - marshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.OrderStatus
+        - to:
+            uri: google-pubsub:cogarc-notification-project:${app.pubsub.topics.order-status}
+        - log:
+            message: "Published order status message to Pub/Sub"
+
+- route:
+    id: ucc-producer
+    from:
+      uri: file:${app.samples.directories.ucc}
+      parameters:
+        delete: true
+        include: "*.json"
+        noop: false
+      steps:
+        - log:
+            message: "Processing UCC file: ${header.CamelFileName}"
+        - unmarshal:
+            json:
+              library: Jackson
+        - marshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.UCC
+        - to:
+            uri: google-pubsub:cogarc-notification-project:${app.pubsub.topics.ucc}
+        - log:
+            message: "Published UCC message to Pub/Sub"
+
+- route:
+    id: tour-appointment-producer
+    from:
+      uri: file:${app.samples.directories.tour-appointment}
+      parameters:
+        delete: true
+        include: "*.json"
+        noop: false
+      steps:
+        - log:
+            message: "Processing tour appointment file: ${header.CamelFileName}"
+        - unmarshal:
+            json:
+              library: Jackson
+        - marshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.TourAppointmentConfirmation
+        - to:
+            uri: google-pubsub:cogarc-notification-project:${app.pubsub.topics.tour-appointment}
+        - log:
+            message: "Published tour appointment message to Pub/Sub"
+
+- route:
+    id: truckload-producer
+    from:
+      uri: file:${app.samples.directories.truckload}
+      parameters:
+        delete: true
+        include: "*.json"
+        noop: false
+      steps:
+        - log:
+            message: "Processing truckload file: ${header.CamelFileName}"
+        - unmarshal:
+            json:
+              library: Jackson
+        - marshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.TruckloadConfirmation
+        - to:
+            uri: google-pubsub:cogarc-notification-project:${app.pubsub.topics.truckload}
+        - log:
+            message: "Published truckload message to Pub/Sub"
+

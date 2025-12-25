@@ -1,0 +1,16 @@
+{
+  "emailType": "TOUR_APPOINTMENT",
+  "id": "tour-appointment-003",
+  "appointmentId": "APT-2024-003",
+  "tourDate": "2024-01-27",
+  "tourTime": "11:30 AM",
+  "customerEmail": "buyer3@example.com",
+  "customerName": "Lisa Anderson",
+  "propertyAddress": "789 Pine Road, San Diego, CA 92101",
+  "agentName": "Robert Taylor",
+  "agentEmail": "robert.taylor@realestate.com",
+  "confirmationNumber": "CONF-2024-003",
+  "timestamp": 1705491000000,
+  "metadata": "{\"propertyType\": \"townhouse\", \"duration\": \"45 minutes\"}"
+}
+

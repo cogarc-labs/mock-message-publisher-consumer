@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: notification-publisher
+  cloud:
+    gcp:
+      project-id: cogarc-notification-project
+      pubsub:
+        emulator-host: ${PUBSUB_EMULATOR_HOST:localhost:8085}
+        enabled: true
+
+# Camel Configuration
+camel:
+  springboot:
+    name: notification-publisher
+    routes-include-pattern: "classpath:routes/consumer-routes.yaml"
+  component:
+    google-pubsub:
+      project-id: cogarc-notification-project
+      emulator-host: ${PUBSUB_EMULATOR_HOST:localhost:8085}
+
+# Application Configuration
+app:
+  pubsub:
+    topics:
+      order-status: order-status-topic
+      ucc: ucc-topic
+      tour-appointment: tour-appointment-topic
+      truckload: truckload-topic
+    subscriptions:
+      order-status: order-status-subscription
+      ucc: ucc-subscription
+      tour-appointment: tour-appointment-subscription
+      truckload: truckload-subscription
+  samples:
+    directories:
+      order-status: samples/order-status
+      ucc: samples/ucc
+      tour-appointment: samples/tour-appointment
+      truckload: samples/truckload
+
+# Server Configuration
+server:
+  port: 8080
+
+# Logging
+logging:
+  level:
+    com.cogarc.notification: DEBUG
+    org.apache.camel: INFO
+    org.springframework.cloud.gcp: INFO
+

@@ -1,0 +1,17 @@
+{
+  "emailType": "TRUCKLOAD",
+  "id": "truckload-002",
+  "truckloadId": "TL-2024-002",
+  "shipmentDate": "2024-01-21",
+  "recipientEmail": "shipper2@example.com",
+  "recipientName": "Nancy Davis",
+  "origin": "Dallas, TX",
+  "destination": "Los Angeles, CA",
+  "carrierName": "Coast to Coast Transport",
+  "trackingNumber": "CCT-2024-002-XYZ",
+  "estimatedArrivalDate": "2024-01-25",
+  "weight": 38000.0,
+  "timestamp": 1705403200000,
+  "metadata": "{\"freightClass\": \"65\", \"temperature\": \"refrigerated\"}"
+}
+

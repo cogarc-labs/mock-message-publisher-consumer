@@ -1,0 +1,17 @@
+{
+  "emailType": "TRUCKLOAD",
+  "id": "truckload-003",
+  "truckloadId": "TL-2024-003",
+  "shipmentDate": "2024-01-22",
+  "recipientEmail": "shipper3@example.com",
+  "recipientName": "Peter Martinez",
+  "origin": "Atlanta, GA",
+  "destination": "Miami, FL",
+  "carrierName": "Southern Express Lines",
+  "trackingNumber": "SEL-2024-003-DEF",
+  "estimatedArrivalDate": "2024-01-24",
+  "weight": 42000.75,
+  "timestamp": 1705491200000,
+  "metadata": "{\"freightClass\": \"77.5\", \"temperature\": \"frozen\"}"
+}
+

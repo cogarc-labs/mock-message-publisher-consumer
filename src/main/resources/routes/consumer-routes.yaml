@@ -1,0 +1,60 @@
+- route:
+    id: order-status-consumer
+    from:
+      uri: google-pubsub:cogarc-notification-project:order-status-subscription
+      steps:
+        - log:
+            message: "Received order status message from Pub/Sub"
+        - unmarshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.OrderStatus
+        - process:
+            ref: orderStatusProcessor
+        - log:
+            message: "Processed order status message with ID: ${body.id}"
+
+- route:
+    id: ucc-consumer
+    from:
+      uri: google-pubsub:cogarc-notification-project:ucc-subscription
+      steps:
+        - log:
+            message: "Received UCC message from Pub/Sub"
+        - unmarshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.UCC
+        - process:
+            ref: uccProcessor
+        - log:
+            message: "Processed UCC message with ID: ${body.id}"
+
+- route:
+    id: tour-appointment-consumer
+    from:
+      uri: google-pubsub:cogarc-notification-project:tour-appointment-subscription
+      steps:
+        - log:
+            message: "Received tour appointment message from Pub/Sub"
+        - unmarshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.TourAppointmentConfirmation
+        - process:
+            ref: tourAppointmentProcessor
+        - log:
+            message: "Processed tour appointment message with ID: ${body.id}"
+
+- route:
+    id: truckload-consumer
+    from:
+      uri: google-pubsub:cogarc-notification-project:truckload-subscription
+      steps:
+        - log:
+            message: "Received truckload message from Pub/Sub"
+        - unmarshal:
+            avro:
+              instanceClassName: com.cogarc.notification.avro.TruckloadConfirmation
+        - process:
+            ref: truckloadProcessor
+        - log:
+            message: "Processed truckload message with ID: ${body.id}"
+

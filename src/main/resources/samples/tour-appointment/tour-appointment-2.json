@@ -1,0 +1,16 @@
+{
+  "emailType": "TOUR_APPOINTMENT",
+  "id": "tour-appointment-002",
+  "appointmentId": "APT-2024-002",
+  "tourDate": "2024-01-26",
+  "tourTime": "2:00 PM",
+  "customerEmail": "buyer2@example.com",
+  "customerName": "Michael Chen",
+  "propertyAddress": "456 Oak Avenue, Los Angeles, CA 90001",
+  "agentName": "David Lee",
+  "agentEmail": "david.lee@realestate.com",
+  "confirmationNumber": "CONF-2024-002",
+  "timestamp": 1705403000000,
+  "metadata": "{\"propertyType\": \"house\", \"duration\": \"90 minutes\"}"
+}
+

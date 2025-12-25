@@ -1,0 +1,15 @@
+{
+  "emailType": "UCC",
+  "id": "ucc-002",
+  "uccId": "UCC-2024-002",
+  "documentType": "AMENDMENT",
+  "recipientEmail": "recipient2@example.com",
+  "recipientName": "Charlie Brown",
+  "filingDate": "2024-01-16T10:30:00Z",
+  "expirationDate": "2029-01-16T23:59:59Z",
+  "securedParty": "DEF Credit Union",
+  "debtor": "GHI Retail LLC",
+  "timestamp": 1705403400000,
+  "metadata": "{\"jurisdiction\": \"NY\", \"filingNumber\": \"NY-2024-002\"}"
+}
+

@@ -1,0 +1,62 @@
+{
+  "type": "record",
+  "name": "OrderStatus",
+  "namespace": "com.cogarc.notification.avro",
+  "fields": [
+    {
+      "name": "emailType",
+      "type": "string",
+      "doc": "Type of email notification"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "Unique message identifier"
+    },
+    {
+      "name": "orderId",
+      "type": "string",
+      "doc": "Order identifier"
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "doc": "Order status (e.g., PENDING, CONFIRMED, SHIPPED, DELIVERED, CANCELLED)"
+    },
+    {
+      "name": "customerEmail",
+      "type": "string",
+      "doc": "Customer email address"
+    },
+    {
+      "name": "customerName",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Customer name"
+    },
+    {
+      "name": "orderDate",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Order date in ISO format"
+    },
+    {
+      "name": "estimatedDeliveryDate",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Estimated delivery date in ISO format"
+    },
+    {
+      "name": "timestamp",
+      "type": "long",
+      "doc": "Message timestamp in milliseconds since epoch"
+    },
+    {
+      "name": "metadata",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Additional metadata as JSON string"
+    }
+  ]
+}
+

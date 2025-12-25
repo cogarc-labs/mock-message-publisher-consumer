@@ -1,0 +1,13 @@
+{
+  "emailType": "ORDER_STATUS",
+  "id": "order-status-003",
+  "orderId": "ORD-2024-003",
+  "status": "DELIVERED",
+  "customerEmail": "customer3@example.com",
+  "customerName": "Bob Johnson",
+  "orderDate": "2024-01-10T11:00:00Z",
+  "estimatedDeliveryDate": "2024-01-17T12:00:00Z",
+  "timestamp": 1705489200000,
+  "metadata": "{\"source\": \"web\", \"priority\": \"normal\"}"
+}
+
