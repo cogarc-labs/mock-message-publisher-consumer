@@ -50,8 +50,7 @@ for topic in "${TOPICS[@]}"; do
     if [[ -n "$PUBSUB_EMULATOR_HOST" ]]; then
         # Using emulator - use gcloud with emulator host
         gcloud pubsub topics create "${topic}" \
-            --project="${PROJECT_ID}" \
-            --emulator-host="${EMULATOR_HOST}" 2>/dev/null || \
+            --project="${PROJECT_ID}" \ 2>/dev/null || \
         echo "Topic ${topic} already exists or emulator not running"
     else
         # Using real GCP
@@ -70,8 +69,7 @@ for sub_info in "${SUBSCRIPTIONS[@]}"; do
         # Using emulator
         gcloud pubsub subscriptions create "${subscription}" \
             --topic="${topic}" \
-            --project="${PROJECT_ID}" \
-            --emulator-host="${EMULATOR_HOST}" 2>/dev/null || \
+            --project="${PROJECT_ID}" 2>/dev/null || \
         echo "Subscription ${subscription} already exists or emulator not running"
     else
         # Using real GCP
